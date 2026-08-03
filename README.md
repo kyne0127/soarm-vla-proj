@@ -15,3 +15,15 @@ ZED 카메라 + MediaPipe 제스처 인식 + Qwen2-VL + SmolVLA를 결합한 SOA
 ```bash
 hf download kyne0127/smol-vla-proj-data --repo-type dataset --local-dir data
 ```
+
+## Baseline (외부 레포)
+
+`baseline/`은 용량 문제로 이 레포에 포함하지 않습니다. 아래 커맨드로 동일한 커밋을 받아오세요.
+
+```bash
+git clone https://github.com/amap-cvlab/ABot-Manipulation.git baseline/ABot-Manipulation
+git -C baseline/ABot-Manipulation checkout bd32a886f6a61495d3a63a1861e7b8ea94310266
+
+git clone https://github.com/facebookresearch/vggt.git baseline/vggt
+git -C baseline/vggt checkout 44b3afbd1869d8bde4894dd8ea1e293112dd5eba
+```
