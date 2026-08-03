@@ -27,3 +27,12 @@ git -C baseline/ABot-Manipulation checkout bd32a886f6a61495d3a63a1861e7b8ea94310
 git clone https://github.com/facebookresearch/vggt.git baseline/vggt
 git -C baseline/vggt checkout 44b3afbd1869d8bde4894dd8ea1e293112dd5eba
 ```
+
+## Models
+
+`models/hand_landmarker.task`(MediaPipe 손 인식 모델)는 서드파티 사전학습 모델이라 레포에 포함하지 않습니다. 아래 커맨드로 받으세요.
+
+```bash
+curl -L -o models/hand_landmarker.task \
+  https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/latest/hand_landmarker.task
+```
